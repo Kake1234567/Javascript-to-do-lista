@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+
+      <!-- Bootstrap CSS -->
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+      />
+
+      <!-- Custom Style -->
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+
+      <!-- Google Font -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+        rel="stylesheet"
+      />
+
+      <!-- FontAwesome Icons -->
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"
+      />
+
+      <title>To do sovellus</title>
+    </head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="intro col-12">
+          <h1>Mitä pitäisi tehdä</h1>
+          <div>
+            <div class="border1"></div>
+          </div>
+          <button class="noPrint" id="printbutton" onclick="window.print();">
+            <i class="fas fa-print"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="row noPrint">
+        <div class="helpText col-12">
+          <p id="first">Syötä tehtäviä alla olevaan kohtaan.</p>
+          <p id="second">
+            Klikkaa keskeltä tehtävää merkataksesi sen valmiiksi.
+          </p>
+          <p id="third">Paina x:ää poistaaksesi tehtävän.</p>
+        </div>
+      </div>
+
+      <div class="row noPrint">
+        <div class="col-12">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Uusi tehtävä..."
+            maxlength="50"
+          />
+          <button id="enter">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty List -->
+      <div class="row">
+        <div class="listItems col-12">
+          <ul class="col-12 offset-0 col-sm-8 offset-sm-2"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
